@@ -1,17 +1,30 @@
-body {
+.body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #fff;
 }
-
-canvas {
-    display: block;
+.spelplan {
+    position: relative;
+    size: 100%;
+    
 }
-#container {
+.bakgrund {
+    z-index: 1;
+
+}
+.spel {
+    z-index: 2;
+}
+
+.bakgrund, .spel {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
+
+.canvas {
+    display: block;
+}
+
+

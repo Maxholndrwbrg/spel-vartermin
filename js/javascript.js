@@ -5,21 +5,26 @@ let meats = [];
 let lastMeatTime = Date.now();
 let score = 0;
 
-const MEAT_INTERVAL = 3000;
+const MEAT_INTERVAL = 6000;
 const COOK_TIME = 5000;
 const BURN_TIME = 8000;
-const RADIUS = 25;
+const RADIUS = 40;
 
 function createMeat() {
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const spread = 180;
+
     return {
-        x: Math.random() * (canvas.width - 100) + 50,
-        y: Math.random() * (canvas.height - 100) + 50,
+        x: centerX + (Math.random() * 2 * spread - spread),
+        y: centerY + (Math.random() * 2 * spread - spread),
         side: 0,
         cookTimeA: 0,
         cookTimeB: 0,
         isBurned: false
     };
 }
+
 
 function drawMeat(meat) {
     let color;
