@@ -25,7 +25,6 @@ function createMeat() {
     };
 }
 
-
 function drawMeat(meat) {
     let color;
     if (meat.isBurned) {
