@@ -1,0 +1,1 @@
+Kötten kommer spawnas in på grillen efter några sekunder, när de blir bruna så klickar man på dem för att vända köttet. sen när de blir bruna igen så dubbleklickar man så försvinner de, annars blir de brända.
