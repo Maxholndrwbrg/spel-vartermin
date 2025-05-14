@@ -5,9 +5,7 @@
     background-color: #fff;
 }
 .spelplan {
-    position: relative;
-    size: 100%;
-    
+    position: relative;    
 }
 .bakgrund {
     z-index: 1;
@@ -26,5 +24,3 @@
 .canvas {
     display: block;
 }
-
-
